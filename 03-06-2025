@@ -1,0 +1,115 @@
+// task 1
+let x = function(str)   {
+    let count = 0
+    while(str[count] != undefined)
+         count++
+    return count;
+}
+
+// task 2
+function toUpperCase(str)   {
+    return str.toUpperCase();
+}
+
+// task 3
+function sum(a,b)   {
+    return a+b
+}
+
+// task 4
+let str = "hello"
+let reversed =''
+for(let i = str.length-1; i >= 0; i--) {
+    reversed += str[i]
+}
+console.log(reversed)
+
+// task 5
+    let arr1 = [1,2]
+let arr2= [3,4]
+let arr3 = arr1.concat(arr2)
+console.log(arr3)
+
+// task 6 
+    const text = "learning Java"
+const text2 = "Java"
+let found = false;
+for(let i = 0; i <= text.length-text2.length;i++)   {
+    let match = true
+    for(let j = 0; j < text2.length;j++)    {
+        if(text[i+j]!==text2[j]) {
+match = false
+break
+        }
+    }
+    if(match)   {
+        found = true;
+        break;
+    }
+}
+console.log(found)
+
+// task 7
+ let arr =  [3,6,9,12]
+for(let i = 0; i < arr.length;i++)  {
+    if(arr[i]==9)    {
+        console.log(i)
+    }
+}
+
+// task 8
+let arr = [50,75,100]
+let result = 0
+for(let i = 0; i < arr.length;++i)  {
+    result += arr[i]
+}
+console.log(result)
+
+//task 9
+    unction cont(haystack,needle)  {
+    if(needle.length>haystack.length) return false;
+    if(needle == '') return false;
+    for(let i = 0; i<=haystack.length-needle.length;++i)    {
+        let match = true
+        for(let j = 0; j < needle.length; ++j)  {
+            if(haystack[i+j] !== needle[j])  {
+               match = false
+               break
+            }
+        }
+        if(match) return true;
+    }
+    return false
+}
+
+// task 10
+function split(str,seperator) {
+    let result=[];
+    let current = '';
+    for(let i = 0; i<str.length;i++)    {
+        if(str[i]===seperator)  {
+result.push(current);
+current = '';
+        }
+        else{
+            current+=str[i];
+        }
+    }
+    result.push(current);
+    return result;
+
+   }
+   console.log(split("hello world",'l'))
+
+   
+   // task 11
+
+   unction pop(arr)  {
+let result = arr[arr.length - 1]
+arr.length-=1
+return result
+}
+console.log(pope([1,2,3,4,9]))
+
+    /////
+    
